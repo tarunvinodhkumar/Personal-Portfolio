@@ -35,7 +35,7 @@ const AboutSection = () => {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate developer with 5+ years of experience building modern web applications
+            Versatile developer and data analyst with hands-on experience delivering end-to-end web solutions and turning complex data into actionable insights.
             </p>
           </div>
         </ScrollReveal>
@@ -45,21 +45,39 @@ const AboutSection = () => {
           <ScrollReveal direction="left">
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  I'm a passionate full-stack developer with a love for creating beautiful, 
-                  functional, and user-friendly applications. My journey in web development 
-                  started 5 years ago, and I've been constantly learning and evolving ever since.
+                <p className="text-lg leading-relaxed text-muted-foreground text-justify" >
+                I’m a passionate full-stack developer with a growing focus on Generative AI and modern web technologies. I specialize in the MERN stack and love building intelligent, user-centric applications that blend functionality with innovation.
+
                 </p>
                 
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  I specialize in React, Node.js, and modern web technologies. I believe in 
-                  writing clean, maintainable code and creating exceptional user experiences 
-                  that make a difference.
+                <p className="text-lg leading-relaxed text-muted-foreground text-justify">
+                Recently, I’ve been exploring how GenAI can transform user experiences by integrating features like smart chatbots, AI-generated content, and personalized recommendations into full-stack solutions. My work bridges the gap between beautiful UI and powerful machine intelligence, helping build the next generation of web applications.
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'MongoDB'].map((tech, index) => (
+                {[
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Firebase',
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Scikit-learn',
+    'TensorFlow',
+    'LangChain',
+    'OpenAI API',
+    'AWS',
+    'Docker',
+    'Git',
+    'Framer Motion',
+    'Tailwind CSS'
+  ].map((tech, index) => (
                   <motion.span
                     key={tech}
                     className="glass-card px-4 py-2 text-sm font-medium"

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import ThreeScene from '../ui/ThreeScene';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Download, icons, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -56,6 +56,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
+              <a href='#projects'>
               <motion.button
                 className="btn-primary inline-flex items-center gap-2"
                 whileHover={{ scale: 1.02 }}
@@ -63,7 +64,9 @@ const HeroSection = () => {
               >
                 View Projects
                 <ArrowRight className="w-4 h-4" />
+                
               </motion.button>
+              </a>
               
               <motion.button
                 className="btn-secondary inline-flex items-center gap-2"
@@ -73,7 +76,8 @@ const HeroSection = () => {
                 <Download className="w-4 h-4" />
                 Download Resume
               </motion.button>
-              
+
+              <a href="#contact">
               <motion.button
                 className="btn-secondary inline-flex items-center gap-2"
                 whileHover={{ scale: 1.02 }}
@@ -82,8 +86,10 @@ const HeroSection = () => {
                 <Mail className="w-4 h-4" />
                 Contact Me
               </motion.button>
+              </a>
             </motion.div>
-
+          
+            
             {/* Social Links */}
             <motion.div
               className="flex items-center gap-6 pt-8"
@@ -92,9 +98,9 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               {[
-                { name: 'GitHub', url: '#' },
-                { name: 'LinkedIn', url: '#' },
-                { name: 'Instagram', url: '#' },
+                { name: 'GitHub', url: 'https://github.com/tarunvinodhkumar', icon:'/github.svg' },
+                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tarun-vinodh-kumar-177ab0193/', icon:'/linkedin.svg' },
+                { name: 'Instagram', url: 'https://www.instagram.com/tarun_v0808/', icon:'/instagram.svg' },
               ].map((social, index) => (
                 <motion.a
                   key={social.name}
@@ -105,7 +111,13 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
                 >
-                  {social.name}
+                  <img
+        src={social.icon}
+        alt={`${social.name} icon`}
+        className="w-6 h-6 md:w-7 md:h-7 object-contain"
+      />
+                  {/* {social.name} */}
+                  
                 </motion.a>
               ))}
             </motion.div>
