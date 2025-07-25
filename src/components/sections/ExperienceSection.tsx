@@ -5,37 +5,44 @@ import ScrollReveal from '../animations/ScrollReveal';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      organization: 'TechCorp Inc.',
-      location: 'San Francisco, CA',
-      duration: '2022 - Present',
-      description: 'Leading a team of 5 developers in building scalable web applications. Implemented microservices architecture that improved system performance by 40%. Mentored junior developers and established coding best practices.',
-      skills: ['React', 'Node.js', 'AWS', 'Docker', 'TypeScript', 'GraphQL'],
+      title: 'IT Developer',
+      organization: 'Vosyn',
+      location: 'Toronto, ON',
+      duration: 'July 2025 - Present',
+      description: 'Collaborate with a cross-functional team to develop scalable web applications at Vosyn. Contribute to the implementation of modular architecture patterns to enhance system performance and maintainability. Participate in code reviews and follow best practices to ensure clean, efficient, and reliable code.',
+      skills: [
+        'MongoDB',
+        'Express.js',
+        'React',
+        'Node.js',
+        'TypeScript',
+        'Docker'
+      ],
     },
     {
-      title: 'Full Stack Developer',
-      organization: 'StartupXYZ',
-      location: 'San Francisco, CA',
-      duration: '2020 - 2022',
-      description: 'Developed and maintained multiple client projects using React and Node.js. Built RESTful APIs and integrated third-party services. Collaborated with design team to create pixel-perfect user interfaces.',
+      title: 'Full Stack Developer Intern',
+      organization: 'The Intern Academy',
+      location: 'Chennai, India',
+      duration: 'June 2021 - November 2021',
+      description: 'Contributed to various client-facing projects using React and Node.js. Assisted in building RESTful APIs and integrating external services. Worked closely with the design team to deliver responsive and visually consistent user interfaces.',
       skills: ['React', 'Node.js', 'MongoDB', 'Express', 'JavaScript', 'CSS3'],
     },
     {
-      title: 'Frontend Developer',
-      organization: 'Digital Agency Co.',
-      location: 'Austin, TX',
-      duration: '2019 - 2020',
-      description: 'Created responsive websites and web applications for various clients. Focused on performance optimization and cross-browser compatibility. Worked closely with designers to implement creative solutions.',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Sass', 'WordPress'],
+      title: 'Web Developer Intern',
+      organization: 'The Sparks Foundation',
+      location: 'Chennai, India',
+      duration: 'January 2021 - June 2021',
+      description: 'Worked on full-stack projects at The Sparks Foundation by building dynamic front-end interfaces and integrating back-end APIs. Focused on delivering responsive design, optimized performance, and functional user flows.',
+      skills: [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'React',
+        'Tailwind CSS',
+        'TypeScript'
+      ],
     },
-    {
-      title: 'Junior Web Developer',
-      organization: 'WebSolutions Ltd.',
-      location: 'Austin, TX',
-      duration: '2018 - 2019',
-      description: 'Started my career building simple websites and learning modern web development practices. Gained experience in version control, testing, and agile development methodologies.',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'Bootstrap'],
-    },
+    
   ];
 
   return (
@@ -47,7 +54,7 @@ const ExperienceSection = () => {
               Work <span className="text-gradient">Experience</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              My professional journey and the companies I've had the pleasure to work with
+            The journey so far and the amazing teams I’ve worked with.
             </p>
           </div>
         </ScrollReveal>
