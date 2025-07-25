@@ -7,22 +7,22 @@ const AboutSection = () => {
     {
       icon: Code,
       title: 'Clean Code',
-      description: 'Writing maintainable and scalable code with best practices',
+      description: 'Building robust and maintainable codebases with a focus on long-term scalability.',
     },
     {
       icon: Palette,
       title: 'UI/UX Design',
-      description: 'Creating beautiful and intuitive user experiences',
+      description: 'Crafting seamless and intuitive digital experiences.',
     },
     {
       icon: Rocket,
       title: 'Performance',
-      description: 'Optimizing applications for speed and efficiency',
+      description: 'Improving load times and responsiveness through performance optimization.',
     },
     {
       icon: Users,
       title: 'Collaboration',
-      description: 'Working effectively in team environments',
+      description: 'Collaborating seamlessly within cross-functional teams.',
     },
   ];
 
@@ -111,7 +111,7 @@ const AboutSection = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                      <p className="text-muted-foreground">{feature.description}</p>
+                      <p className="text-muted-foreground text-left">{feature.description}</p>
                     </div>
                   </motion.div>
                 </ScrollReveal>
