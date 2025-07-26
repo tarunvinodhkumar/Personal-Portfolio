@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -12,8 +13,25 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+  
+    emailjs
+      .send(
+        'service_gf4qdca',      
+        'template_fh1ru14',     
+        formData,               
+        'IkPqMJ7vT2gweMNdQ'       
+      )
+      .then(
+        (result) => {
+          console.log('Email sent!', result.text);
+          alert('Message sent successfully!');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        },
+        (error) => {
+          console.error('Error sending email:', error.text);
+          alert('Failed to send message.');
+        }
+      );
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,20 +45,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com',
+      value: 'tarunvinodhkumar@gmail.com',
+      href: 'mailto:tarunvinodhkumar@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+1 (807) 357-3713',
+      href: 'tel:+18073573713',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: '#',
+      value: 'Oakville, ON, Canada',
+      href: 'https://maps.app.goo.gl/J7ww6DQpTwDF8QjX8',
     },
   ];
 
@@ -58,7 +76,7 @@ const ContactSection = () => {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Let's create something amazing together.
+          Open to full-time roles and freelance projects — if you’ve got an idea or opportunity in mind, I’d love to hear from you!
           </p>
         </motion.div>
 
@@ -72,11 +90,9 @@ const ContactSection = () => {
             viewport={{ once: true }}
           >
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Let's talk about your project</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                I'm always excited to work on new projects and bring innovative ideas to life. 
-                Whether you need a website, web application, or just want to discuss technology, 
-                I'd love to hear from you.
+              <h3 className="text-2xl font-semibold">Let’s talk about your next big idea</h3>
+              <p className="text-muted-foreground leading-relaxed text-xl">
+              Whether you’re building from scratch or improving an existing product, I’m here to help. I’m open to full-time roles and freelance work — reach out and let’s create something impactful together.
               </p>
             </div>
 
@@ -112,13 +128,13 @@ const ContactSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold mb-4">Follow me</h4>
+              <h4 className="text-lg font-semibold mb-4">Let's Connect</h4>
               <div className="flex gap-4">
                 {[
-                  { name: 'GitHub', url: '#' },
-                  { name: 'LinkedIn', url: '#' },
-                  { name: 'Instagram', url: '#' },
-                  { name: 'Twitter', url: '#' },
+                  { name: 'GitHub', url: '#',icon:'/github.svg' },
+                  { name: 'LinkedIn', url: '#',icon:'/linkedin.svg' },
+                  { name: 'Instagram', url: '#',icon:'/instagram.svg' },
+                
                 ].map((social, index) => (
                   <motion.a
                     key={social.name}
@@ -130,7 +146,11 @@ const ContactSection = () => {
                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    {social.name.charAt(0)}
+                    <img
+  src={social.icon}
+  alt={social.name}
+  className="w-6 h-6 object-contain"
+/>
                   </motion.a>
                 ))}
               </div>
@@ -244,7 +264,9 @@ const ContactSection = () => {
               >
                 Send Message
                 <Send className="w-4 h-4" />
+                
               </motion.button>
+              
             </form>
           </motion.div>
         </div>
