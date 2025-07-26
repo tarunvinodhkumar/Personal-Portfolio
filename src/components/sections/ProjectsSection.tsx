@@ -4,28 +4,91 @@ import { ExternalLink, Github } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce platform built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: '#',
-      live: '#',
+      title: 'Medical Assistant using Generative AI-Gemini',
+      description: 'The Medical Assistant is a web application that leverages Google’s GenerativeAI to generate detailed and accurate medical responses. Users input medical queries, and the application provides responses adhering to specific guidelines for clarity, accuracy, and informativeness.',
+      image: '/p1.jpg',
+      tech: ['Flask', 'Python', 'HTML', 'Tailwind CSS','React.js', 'JavaScript', 'Bootstrap', 'Google Generative AI (Gemini)', 'MongoDB'],
+      github: 'https://github.com/tarunvinodhkumar/Medical-Assistant-using-GenAI-Gemini-',
+      
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      tech: ['React', 'Socket.io', 'MongoDB', 'Express'],
-      github: '#',
-      live: '#',
+      title: 'PDF Summarizer',
+      description: 'This project is a web-based PDF Summarizer application that processes PDF files and generates concise summaries using multiple Language Learning Models (LLMs). It allows users to upload PDF files and receive summaries from two distinct models, providing diverse perspectives and understanding.',
+      image: '/p2.jpg',
+      tech: [
+        'Node.js',
+        'Express.js',
+        'React.js',
+        'Tailwind CSS',
+        'pdf-parse',
+        'Hugging Face (BART)',
+        'Google Generative AI (Gemini)',
+        'JavaScript',
+        'HTML',
+        
+      ],
+      github: 'https://github.com/tarunvinodhkumar/PDF-Summarize',
     },
     {
-      title: 'AI Content Generator',
-      description: 'An AI-powered content generation tool that helps users create blog posts, social media content, and marketing copy using GPT API.',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
-      tech: ['Next.js', 'OpenAI API', 'Prisma', 'Tailwind'],
-      github: '#',
-      live: '#',
+      title: 'Food Monk - Food Delivery App',
+      description: 'Food Monk is a MERN stack-based food delivery app that lets users browse restaurants, place orders, and track deliveries. It integrates the Google Maps API for real-time location tracking and offers a responsive UI with secure user authentication and admin management features.',
+      image: '/p3.jpg',
+      tech: [
+        'MongoDB',
+        'Express.js',
+        'React.js',
+        'Node.js',
+        'Google Maps API',
+        'Tailwind CSS',
+        'JavaScript',
+        'Bootstrap',
+        'Redux'
+        
+      ],
+      github: 'https://github.com/tarunvinodhkumar/FoodMonk-Food-Delivery-App-using-MERN-stack',
+
+    },
+    {
+      title: 'Stock Analysis using Power BI',
+      description: 'A comprehensive stock market analysis dashboard built using Power BI to visualize trends, performance, and financial metrics of selected companies. The project involves importing and transforming stock market data, creating interactive charts, KPIs, and filters to help users gain insights into historical prices, volume, volatility, and overall market behavior.',
+      image: '/p4.jpg',
+      tech: [
+        'Power BI',
+        'Power Query',
+        'Excel',
+        'Data Visualization',
+        'Data Modeling'
+      ],
+      github: 'https://github.com/tarunvinodhkumar/Stock-Analysis-using-PowerBI',
+      
+    },
+    {
+      title: 'E-Commerce Data Analysis using Power BI',
+      description: 'A dynamic Power BI dashboard built to analyze and visualize key metrics from an e-commerce business. The project provides insights into sales performance, customer behavior, product trends, and profitability by transforming raw transactional data into meaningful visualizations. It enables decision-makers to monitor KPIs, track revenue growth, and identify high-performing categories and regions.',
+      image: '/p5.jpg',
+      tech: [
+        'Power BI',
+        'Power Query',
+        'Excel',
+        'Data Visualization',
+        'Data Modeling'
+      ],
+      github: 'https://github.com/tarunvinodhkumar/E-Commerce-Data-Analysis-using-Power-BI',
+      
+    },
+    {
+      title: 'Covid-19 in India Analysis Dashboard using Tableu',
+      description: 'A dashboard built with Tableau to analyze and visualize the spread and impact of COVID-19 across India. The project leverages official datasets to present trends in confirmed cases, recoveries, deaths, testing rates, and regional comparisons. Users can explore time-series data, state-wise distributions, and demographic insights through visually engaging and dynamic charts.',
+      image: '/p6.jpg',
+      tech: [
+        'Tableau',
+        'Time-Series Analysis',
+        'Excel',
+        'Data Visualization',
+        'Data Modeling'
+      ],
+      github: 'https://github.com/tarunvinodhkumar/Infection-Rate-Visualiztion-of-COVID-19-in-IND',
+      
     },
   ];
 
@@ -99,7 +162,7 @@ const ProjectsSection = () => {
                   </motion.a>
                   
                   <motion.a
-                    href={project.live}
+                    href={project.github}
                     className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
