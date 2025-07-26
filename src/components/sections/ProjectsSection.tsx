@@ -156,25 +156,7 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex items-center gap-4 pt-4">
-                  {/* <motion.a
-                    href={project.github}
-                    className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </motion.a> */}
                   
-                  {/* <motion.a
-                    href={project.github}
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </motion.a> */}
                 </div>
               </div>
             </motion.div>

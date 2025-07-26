@@ -10,16 +10,20 @@ const SkillsSection = () => {
         { name: 'Next.js', level: 85 },
         { name: 'Tailwind CSS', level: 90 },
         { name: 'Framer Motion', level: 80 },
+        { name: 'Bootstrap', level: 90 },
+        { name: 'JavaScript', level: 90 },
       ],
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Python', level: 85 },
+        { name: 'Node.js', level: 80 },
+        { name: 'Python', level: 90 },
         { name: 'PostgreSQL', level: 80 },
         { name: 'MongoDB', level: 85 },
         { name: 'GraphQL', level: 75 },
+        { name: 'Express.js', level: 80 },
+        { name: 'Rest APIs', level: 80 },
       ],
     },
     {
@@ -27,9 +31,11 @@ const SkillsSection = () => {
       skills: [
         { name: 'Git', level: 95 },
         { name: 'Docker', level: 80 },
-        { name: 'AWS', level: 75 },
+        { name: 'Power BI', level: 85 },
         { name: 'Figma', level: 85 },
-        { name: 'Testing', level: 80 },
+        { name: 'Postman', level: 80 },
+        { name: 'Tableau', level: 70 },
+        { name: 'Excel', level: 95 },
       ],
     },
   ];
@@ -48,7 +54,7 @@ const SkillsSection = () => {
             My <span className="text-gradient">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+          My Development Stack & Toolset
           </p>
         </motion.div>
 
@@ -117,9 +123,9 @@ const SkillsSection = () => {
           <div className="glass-card max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               {[
-                { label: 'Years of Experience', value: '5+' },
-                { label: 'Projects Completed', value: '50+' },
-                { label: 'Happy Clients', value: '30+' },
+                { label: 'Technologies Mastered', value: '15+' },
+                { label: 'Projects Built', value: '10+' },
+                { label: 'Hours of Learning', value: '1000+' },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
