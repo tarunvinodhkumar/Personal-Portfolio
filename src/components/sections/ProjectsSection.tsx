@@ -27,7 +27,7 @@ const ProjectsSection = () => {
         'HTML',
         
       ],
-      github: 'https://github.com/tarunvinodhkumar/PDF-Summarize',
+      github: 'https://github.com/tarunvinodhkumar/PDF-Summarizer',
     },
     {
       title: 'Food Monk - Food Delivery App',
@@ -106,12 +106,17 @@ const ProjectsSection = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for development
+          Highlighted projects that reflect my expertise and passion for building impactful solutions.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
+            <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               key={project.title}
               className="glass-card group overflow-hidden hover-lift"
@@ -135,7 +140,7 @@ const ProjectsSection = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   {project.description}
                 </p>
 
@@ -151,7 +156,7 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex items-center gap-4 pt-4">
-                  <motion.a
+                  {/* <motion.a
                     href={project.github}
                     className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
@@ -159,9 +164,9 @@ const ProjectsSection = () => {
                   >
                     <Github className="w-4 h-4" />
                     Code
-                  </motion.a>
+                  </motion.a> */}
                   
-                  <motion.a
+                  {/* <motion.a
                     href={project.github}
                     className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
@@ -169,10 +174,11 @@ const ProjectsSection = () => {
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </motion.div>
+          </a>
           ))}
         </div>
 
@@ -183,6 +189,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
         >
+          <a href='https://github.com/tarunvinodhkumar?tab=repositories'>
           <motion.button
             className="btn-primary"
             whileHover={{ scale: 1.02 }}
@@ -190,7 +197,9 @@ const ProjectsSection = () => {
           >
             View All Projects
           </motion.button>
+          </a>
         </motion.div>
+  
       </div>
     </section>
   );
