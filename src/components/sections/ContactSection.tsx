@@ -131,9 +131,9 @@ const ContactSection = () => {
               <h4 className="text-lg font-semibold mb-4">Let's Connect</h4>
               <div className="flex gap-4">
                 {[
-                  { name: 'GitHub', url: '#',icon:'/github.svg' },
-                  { name: 'LinkedIn', url: '#',icon:'/linkedin.svg' },
-                  { name: 'Instagram', url: '#',icon:'/instagram.svg' },
+                  { name: 'GitHub', url: 'https://github.com/tarunvinodhkumar',icon:'/github.svg' },
+                  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tarun-vinodh-kumar-177ab0193/',icon:'/linkedin.svg' },
+                  { name: 'Instagram', url: 'https://www.instagram.com/tarun_v0808/',icon:'/instagram.svg' },
                 
                 ].map((social, index) => (
                   <motion.a

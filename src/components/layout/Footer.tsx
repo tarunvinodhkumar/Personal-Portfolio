@@ -16,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gradient">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold text-gradient">Tarun Vinodh Kumar</h3>
             <p className="text-muted-foreground max-w-sm">
               Full Stack Developer passionate about creating beautiful and functional web experiences.
             </p>
@@ -60,16 +60,16 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold">Get in Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>alex@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>tarunvinodhkumar@gmail.com</p>
+              <p>+1 (807) 357-3713</p>
+              <p>Oakville, ON, Canada</p>
             </div>
             
             <div className="flex gap-4 pt-2">
               {[
-                { name: 'GitHub', url: '#' },
-                { name: 'LinkedIn', url: '#' },
-                { name: 'Instagram', url: '#' },
+                { name: 'GitHub', url: 'https://github.com/tarunvinodhkumar',icon: '/github.svg' },
+                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/tarun-vinodh-kumar-177ab0193/',icon: '/linkedin.svg' },
+                { name: 'Instagram', url: 'https://www.instagram.com/tarun_v0808/',icon: '/instagram.svg' },
               ].map((social) => (
                 <motion.a
                   key={social.name}
@@ -77,7 +77,11 @@ const Footer = () => {
                   className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   whileHover={{ scale: 1.1, y: -2 }}
                 >
-                  {social.name.charAt(0)}
+                  <img
+  src={social.icon}
+  alt={social.name}
+  className="w-6 h-6 object-contain"
+/>
                 </motion.a>
               ))}
             </div>
@@ -92,7 +96,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Alex Johnson. Made with 
+            © {currentYear} Tarun Vinodh Kumar. Made with 
             <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 0.8, repeat: Infinity, repeatDelay: 2 }}

@@ -35,11 +35,18 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <motion.div
-            className="text-2xl font-bold text-gradient"
+        <motion.div
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
           >
-            Portfolio
+            <a href="#" className="flex items-center space-x-2">
+            <div className="relative bg-gradient-primary bg-clip-text text-transparent">
+              <span className="text-3xl font-black tracking-tighter">T</span>
+              <span className="text-2xl font-bold">V</span>
+              <span className="text-3xl font-black">K</span>
+              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-primary opacity-60"></div>
+            </div>
+            </a>
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
