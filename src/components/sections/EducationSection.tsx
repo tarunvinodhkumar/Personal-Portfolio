@@ -6,35 +6,38 @@ const EducationSection = () => {
   const education = [
     {
       title: 'Master of Science in Computer Science',
-      organization: 'Stanford University',
-      location: 'Stanford, CA',
-      duration: '2016 - 2018',
-      description: 'Specialized in Machine Learning and Artificial Intelligence. Completed thesis on "Deep Learning Applications in Web Development". Graduated Magna Cum Laude with a GPA of 3.8/4.0.',
-      skills: ['Machine Learning', 'AI', 'Python', 'TensorFlow', 'Data Structures', 'Algorithms'],
+      organization: 'Lakehead University',
+      location: 'Thunder Bay, ON',
+      duration: '2023 - 2025',
+      description: 'Focused on Machine Learning and Artificial Intelligence during academic coursework. Graduated with a GPA of 3.7/4.0',
+      skills: [
+        'Python',
+        'Machine Learning',
+        'Artificial Intelligence',
+        'TensorFlow',
+        'Scikit-learn',
+        'Pandas',
+        'NumPy',
+        'OpenAI API',
+        'Data Structures & Algorithms'
+      ],
     },
     {
-      title: 'Bachelor of Science in Software Engineering',
-      organization: 'University of California, Berkeley',
-      location: 'Berkeley, CA',
-      duration: '2012 - 2016',
+      title: 'Bachelor of Engineering in Computer Science',
+      organization: 'Panimalar Engineering College',
+      location: 'Chnnai, India',
+      duration: '2019 - 2023',
       description: 'Comprehensive study of software development principles, computer science fundamentals, and engineering practices. Active member of the Programming Club and participated in multiple hackathons.',
-      skills: ['Java', 'C++', 'Software Design', 'Database Systems', 'Web Development', 'Mobile Development'],
+      skills: ['Python','Java', 'C++', 'Software Design', 'Database Systems', 'Web Development', 'Mobile Development', 'Data Structures & Algorithms'],
     },
-    {
-      title: 'Full Stack Web Development Bootcamp',
-      organization: 'Le Wagon',
-      location: 'San Francisco, CA',
-      duration: '2017 (Summer)',
-      description: 'Intensive 9-week program focused on modern web development technologies. Built multiple full-stack applications from scratch. Learned industry best practices and agile methodologies.',
-      skills: ['Ruby on Rails', 'JavaScript', 'React', 'PostgreSQL', 'Git', 'Heroku'],
-    },
+    
   ];
 
   const certifications = [
-    'AWS Certified Solutions Architect',
-    'Google Cloud Professional Developer',
-    'Meta React Developer Certificate',
-    'MongoDB Developer Certification',
+    'Full Stack Web Development Certification',
+    'Microsoft AI Classroom Series',
+    'Android App Development using Flutter',
+    'UI/UX Designing using Figma',
   ];
 
   return (
@@ -46,7 +49,7 @@ const EducationSection = () => {
               Education & <span className="text-gradient">Learning</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              My academic background and continuous learning journey
+            From Classroom to Code: My Learning Journey
             </p>
           </div>
         </ScrollReveal>
@@ -94,12 +97,11 @@ const EducationSection = () => {
             <ScrollReveal direction="right" delay={0.6}>
               <div className="glass-card space-y-4">
                 <h4 className="text-xl font-semibold text-gradient">Continuous Learning</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  I'm committed to staying current with the latest technologies and best practices. 
-                  I regularly participate in online courses, workshops, and tech conferences to expand my skill set.
+                <p className="text-muted-foreground text-m leading-relaxed text-justify">
+                I stay actively engaged with emerging technologies and development practices through online courses, workshops, and community events. I’m passionate about upskilling and continuously expanding my expertise to stay ahead in a fast-evolving tech landscape.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
-                  {['Coursera', 'Udemy', 'Pluralsight', 'FreeCodeCamp'].map((platform, index) => (
+                  {['Coursera', 'Udemy', 'Youtube', 'FreeCodeCamp'].map((platform, index) => (
                     <span
                       key={platform}
                       className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
