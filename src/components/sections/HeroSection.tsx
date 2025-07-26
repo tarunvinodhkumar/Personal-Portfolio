@@ -137,7 +137,7 @@ const HeroSection = () => {
       transition={{ duration: 0.3 }}
     >
       <img
-        src="/public/E99D7B7C-EF58-4B8D-A319-C1A7FBA28445_1_105_c.jpeg"
+        src="tarun.jpeg"
         alt="Tarun Vinodh Kumar - Full Stack Developer"
         className="w-80 h-80 object-cover rounded-full border-4 border-primary/20 shadow-2xl"
       />
@@ -145,18 +145,7 @@ const HeroSection = () => {
   </div>
 </motion.div>
 
-          {/* 3D Scene */}
-          {/* <motion.div
-            className="flex justify-center lg:justify-end"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-full blur-3xl animate-pulse-glow" />
-              <ThreeScene />
-            </div>
-          </motion.div> */}
+
         </div>
       </div>
     </section>
