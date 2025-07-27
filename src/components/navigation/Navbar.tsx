@@ -115,7 +115,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05, y: -1 }}
               whileTap={{ scale: 0.98 }}
             >
-              <a href="/Tarun_Vinodh_Kumar_CV.pdf" download='Tarun_Vinodh_Kumar_CV.pdf'>
+              <a href="/TarunVinodhKumar_Resume.pdf" download='TarunVinodhKumar_Resume.pdf'>
                 <span className="relative z-10">Download CV</span>
               </a>
               <motion.div

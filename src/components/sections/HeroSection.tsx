@@ -67,7 +67,7 @@ const HeroSection = () => {
                 
               </motion.button>
               </a>
-              <a href='/Tarun_Vinodh_Kumar_CV.pdf' download='Tarun_Vinodh_Kumar_CV.pdf'>
+              <a href='/TarunVinodhKumar_Resume.pdf' download='TarunVinodhKumar_Resume.pdf'>
               <motion.button
                 className="btn-secondary inline-flex items-center gap-2"
                 whileHover={{ scale: 1.02 }}
