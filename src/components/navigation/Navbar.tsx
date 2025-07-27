@@ -124,13 +124,16 @@ const Navbar = () => {
               whileHover={{ scale: 1.05, y: -1 }}
               whileTap={{ scale: 0.98 }}
             >
+              <a href='/Tarun_Vinodh_Kumar_CV.pdf' download='Tarun_Vinodh_Kumar_CV.pdf'>
               <span className="relative z-10">Download CV</span>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-primary to-primary-glow opacity-0 hover:opacity-20"
                 whileHover={{ opacity: 0.2 }}
                 transition={{ duration: 0.3 }}
               />
+              </a>
             </motion.button>
+          
           </div>
         </div>
 
