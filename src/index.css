@@ -1,3 +1,8 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,63 +11,63 @@
 
 @layer base {
   :root {
-    /* Core Background & Text */
-    --background: 0 0% 100%;
-    --foreground: 225 15% 15%;
+    /* Core Background & Text - Calm warm tones */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
 
     /* Card & Surface Colors */
-    --card: 0 0% 100%;
-    --card-foreground: 225 15% 15%;
-    --glass: 0 0% 100% / 0.8;
-    --glass-border: 0 0% 100% / 0.18;
+    --card: 210 15% 99%;
+    --card-foreground: 215 25% 27%;
+    --glass: 210 15% 99% / 0.85;
+    --glass-border: 215 20% 88% / 0.6;
 
     /* Popover Colors */
-    --popover: 0 0% 100%;
-    --popover-foreground: 225 15% 15%;
+    --popover: 210 15% 99%;
+    --popover-foreground: 215 25% 27%;
 
-    /* Brand Colors - Modern SaaS Purple/Blue Theme */
-    --primary: 250 100% 65%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 250 100% 75%;
-    --primary-muted: 250 100% 95%;
+    /* Brand Colors - Calm sage green & earth tones */
+    --primary: 156 28% 45%;
+    --primary-foreground: 210 20% 98%;
+    --primary-glow: 156 35% 55%;
+    --primary-muted: 156 20% 92%;
 
-    /* Secondary Brand */
-    --secondary: 210 100% 95%;
-    --secondary-foreground: 225 15% 15%;
+    /* Secondary Brand - Soft lavender */
+    --secondary: 250 15% 92%;
+    --secondary-foreground: 215 25% 27%;
 
-    /* Accent Colors */
-    --accent: 280 100% 70%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 280 100% 85%;
+    /* Accent Colors - Soft coral/peach */
+    --accent: 25 45% 65%;
+    --accent-foreground: 210 20% 98%;
+    --accent-glow: 25 50% 75%;
 
     /* Muted Colors */
-    --muted: 210 40% 98%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 15% 45%;
 
-    /* Status Colors */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    /* Status Colors - Muted and calmer */
+    --destructive: 355 60% 55%;
+    --destructive-foreground: 210 20% 98%;
+    --success: 145 35% 45%;
+    --success-foreground: 210 20% 98%;
 
     /* Border & Input */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 250 100% 65%;
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 156 28% 45%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(250 100% 65%), hsl(280 100% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(210 100% 95%), hsl(250 100% 95%));
-    --gradient-mesh: radial-gradient(circle at 20% 50%, hsl(250 100% 65% / 0.3) 0%, transparent 50%),
-                     radial-gradient(circle at 80% 20%, hsl(280 100% 70% / 0.3) 0%, transparent 50%),
-                     radial-gradient(circle at 40% 80%, hsl(210 100% 70% / 0.2) 0%, transparent 50%);
+    /* Gradients - Calm and soothing */
+    --gradient-primary: linear-gradient(135deg, hsl(156 28% 45%), hsl(156 35% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25 45% 65%), hsl(35 45% 70%));
+    --gradient-mesh: radial-gradient(circle at 25% 25%, hsl(156 28% 45% / 0.08) 0%, transparent 50%),
+                     radial-gradient(circle at 75% 75%, hsl(25 45% 65% / 0.06) 0%, transparent 50%),
+                     radial-gradient(circle at 50% 50%, hsl(250 15% 80% / 0.04) 0%, transparent 70%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px hsl(225 15% 15% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(225 15% 15% / 0.1), 0 2px 4px -1px hsl(225 15% 15% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(225 15% 15% / 0.1), 0 4px 6px -2px hsl(225 15% 15% / 0.05);
-    --shadow-glow: 0 0 40px hsl(250 100% 65% / 0.3);
-    --shadow-glow-lg: 0 0 60px hsl(250 100% 65% / 0.4);
+    /* Shadows - Softer and warmer */
+    --shadow-sm: 0 1px 2px hsl(215 25% 27% / 0.04);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 27% / 0.08), 0 2px 4px -1px hsl(215 25% 27% / 0.04);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 27% / 0.08), 0 4px 6px -2px hsl(215 25% 27% / 0.04);
+    --shadow-glow: 0 0 25px hsl(156 28% 45% / 0.2);
+    --shadow-glow-lg: 0 0 35px hsl(156 28% 45% / 0.25);
 
     /* Animations */
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,81 +77,74 @@
 
     --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 210 15% 97%;
+    --sidebar-foreground: 215 25% 27%;
+    --sidebar-primary: 156 28% 45%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 215 15% 92%;
+    --sidebar-accent-foreground: 215 25% 27%;
+    --sidebar-border: 215 20% 88%;
+    --sidebar-ring: 156 28% 45%;
   }
 
   .dark {
-    /* Core Background & Text */
-    --background: 225 15% 8%;
-    --foreground: 210 40% 98%;
+    /* Core Background & Text - Calm dark tones */
+    --background: 215 20% 12%;
+    --foreground: 210 15% 88%;
 
     /* Card & Surface Colors */
-    --card: 225 15% 11%;
-    --card-foreground: 210 40% 98%;
-    --glass: 225 15% 11% / 0.8;
-    --glass-border: 0 0% 100% / 0.18;
+    --card: 215 18% 15%;
+    --card-foreground: 210 15% 88%;
+    --glass: 215 18% 15% / 0.85;
+    --glass-border: 210 15% 25% / 0.6;
 
     /* Popover Colors */
-    --popover: 225 15% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 18% 15%;
+    --popover-foreground: 210 15% 88%;
 
-    /* Brand Colors - Maintain same brand colors in dark mode */
-    --primary: 250 100% 65%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 250 100% 75%;
-    --primary-muted: 250 100% 15%;
+    /* Brand Colors - Calmer sage green in dark mode */
+    --primary: 156 35% 55%;
+    --primary-foreground: 215 20% 12%;
+    --primary-glow: 156 40% 65%;
+    --primary-muted: 156 25% 20%;
 
-    /* Secondary Brand */
-    --secondary: 225 15% 15%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary Brand - Soft warm purple */
+    --secondary: 250 18% 18%;
+    --secondary-foreground: 210 15% 88%;
 
-    /* Accent Colors */
-    --accent: 280 100% 70%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 280 100% 85%;
+    /* Accent Colors - Warmer coral in dark mode */
+    --accent: 25 50% 70%;
+    --accent-foreground: 215 20% 12%;
+    --accent-glow: 25 55% 80%;
 
     /* Muted Colors */
-    --muted: 225 15% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 18% 18%;
+    --muted-foreground: 215 12% 60%;
 
-    /* Status Colors */
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 100%;
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    /* Status Colors - Calmer in dark mode */
+    --destructive: 355 65% 65%;
+    --destructive-foreground: 215 20% 12%;
+    --success: 145 40% 55%;
+    --success-foreground: 215 20% 12%;
 
     /* Border & Input */
-    --border: 225 15% 20%;
-    --input: 225 15% 20%;
-    --ring: 250 100% 65%;
+    --border: 215 15% 25%;
+    --input: 215 15% 25%;
+    --ring: 156 35% 55%;
 
-    /* Gradients - Enhanced for dark mode */
-    --gradient-primary: linear-gradient(135deg, hsl(250 100% 65%), hsl(280 100% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(225 15% 15%), hsl(250 100% 15%));
-    --gradient-mesh: radial-gradient(circle at 20% 50%, hsl(250 100% 65% / 0.4) 0%, transparent 50%),
-                     radial-gradient(circle at 80% 20%, hsl(280 100% 70% / 0.4) 0%, transparent 50%),
-                     radial-gradient(circle at 40% 80%, hsl(210 100% 70% / 0.3) 0%, transparent 50%);
+    /* Gradients - Calm dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(156 35% 55%), hsl(156 40% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25 50% 70%), hsl(35 50% 75%));
+    --gradient-mesh: radial-gradient(circle at 25% 25%, hsl(156 35% 55% / 0.12) 0%, transparent 50%),
+                     radial-gradient(circle at 75% 75%, hsl(25 50% 70% / 0.08) 0%, transparent 50%),
+                     radial-gradient(circle at 50% 50%, hsl(250 18% 25% / 0.06) 0%, transparent 70%);
     
-    /* Shadows - Enhanced for dark mode */
-    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.2), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -2px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 40px hsl(250 100% 65% / 0.4);
-    --shadow-glow-lg: 0 0 60px hsl(250 100% 65% / 0.5);
+    /* Shadows - Softer for dark mode */
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.15);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.25), 0 2px 4px -1px hsl(0 0% 0% / 0.15);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.35), 0 4px 6px -2px hsl(0 0% 0% / 0.15);
+    --shadow-glow: 0 0 25px hsl(156 35% 55% / 0.25);
+    --shadow-glow-lg: 0 0 35px hsl(156 35% 55% / 0.3);
   }
 }
 
@@ -157,6 +155,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-feature-settings: "cv11", "ss01";
     font-variation-settings: "opsz" 32;
   }
