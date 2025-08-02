@@ -25,7 +25,7 @@ const EducationSection = () => {
     {
       title: 'Bachelor of Engineering in Computer Science',
       organization: 'Panimalar Engineering College',
-      location: 'Chnnai, India',
+      location: 'Chennai, India',
       duration: '2019 - 2023',
       description: 'Comprehensive study of software development principles, computer science fundamentals, and engineering practices. Active member of the Programming Club and participated in multiple hackathons.',
       skills: ['Python','Java', 'C++', 'Software Design', 'Database Systems', 'Web Development', 'Mobile Development', 'Data Structures & Algorithms'],
