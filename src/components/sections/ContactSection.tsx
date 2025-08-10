@@ -247,7 +247,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   rows={6}
                   className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Your message here..."
                   required
                 />
               </motion.div>
