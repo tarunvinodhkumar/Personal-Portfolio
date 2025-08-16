@@ -76,7 +76,7 @@ const Index = () => {
       </main>
       
       <Footer />
-      <FloatingChatBot />
+      {/* <FloatingChatBot /> */}
     </motion.div>
   );
 };
