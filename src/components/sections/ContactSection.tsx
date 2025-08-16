@@ -76,7 +76,7 @@ const ContactSection = () => {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Open to full-time roles and freelance projects — if you’ve got an idea or opportunity in mind, I’d love to hear from you!
+          Open to full-time roles and freelance projects. If you’ve got an idea or opportunity in mind, I’d love to hear from you!
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ const ContactSection = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Let’s talk about your next big idea</h3>
               <p className="text-muted-foreground leading-relaxed text-xl">
-              Whether you’re building from scratch or improving an existing product, I’m here to help. I’m open to full-time roles and freelance work — reach out and let’s create something impactful together.
+              Whether you’re building from scratch or improving an existing product, I’m here to help. I’m open to full-time roles and freelance work. Reach out and let’s create something impactful together.
               </p>
             </div>
 

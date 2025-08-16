@@ -46,7 +46,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
-                Full Stack Developer and Data Analyst skilled in building end-to-end web solutions and driving data-informed decisions.
+               Generative AI Full Stack Developer and Data Analyst skilled in building intelligent end-to-end web solutions and leveraging AI to drive data-informed decisions.
               </motion.p>
             </motion.div>
 
